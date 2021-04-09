@@ -1,13 +1,13 @@
 .wrapper {
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
     position: relative;
-    padding: 10px 10px 10px;
+    padding: 20px 20px 20px;
 }
 
-.filler {
-    height: 100%;
-    width: 100%;
+.horizontalcardswrapper{
+  display: grid;
+  /*grid-template-rows: 0.5fr 0.80fr 0.46fr;*/
 }
 
 .ptitlesub{
@@ -79,25 +79,13 @@ li {
 
 .card {
     border-radius: 1em;
-    padding: 0.5em 1em;
+    padding: 1em 2em;}
+/*
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    transition: box-shadow 0.2s;
+    transition: background-color 0.2s;
 }
-
-.card.project {
-    padding: 0;
-}
-
-.project-content {
-    padding: 1em 2em;
-}
-
-.project-content h2 {
-    margin-top: 0.5em;
-}
-
-.project-content p {
-    font-size: 1em;
-}
-
+*/
 .card.slim {
     padding: 0.25em 0.5em;
 }
@@ -105,10 +93,6 @@ li {
 .image-container {
     max-width: 1em;
     margin: 0 auto;
-}
-
-.project-img {
-    width: 100%;
 }
 
 .image-container img {
@@ -148,16 +132,12 @@ h2 {
     font-size: 2.2em;
 }
 
-.project h2 {
-    font-size: 1.2em;
-}
-
 h3 {
     font-size: 1.3em;
     font-weight: normal;
 }
 
-.card + .horizontal, p + .horizontal, .horizontal + .horizontal {
+.card + .horizontal, p + .horizontal {
     margin-top: 1.5em;
 }
 
@@ -253,7 +233,6 @@ input[type=radio] {
 
     .horizontal > * {
         flex-grow: 1;
-        flex-basis: 0;
     }
 
     .horizontal > * + * {
@@ -264,15 +243,6 @@ input[type=radio] {
     .horizontal > .slim + .slim {
         margin-left: 0.5em;
         margin-top: 0;
-    }
-
-    .wrapper {
-        padding: 10px 10px 10px;
-    }
-
-    .card {
-        padding: 1em 2em;
-
     }
 
 }
