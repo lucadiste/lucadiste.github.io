@@ -22,9 +22,10 @@
     --orange:rgb(252, 157, 120);
     --orangehover:rgb(252, 157, 120);
 }
+
 [data-theme=dark]{
-    --tabbackground:#121212;
-    --mainbackground:black;
+    --mainbackground:#181818;
+    --tabbackground:rgb(15, 15, 15);
     --maintext:#e1e1ff;
     --colortitle:white;
     --colordarktext:#20C20E;
@@ -45,15 +46,14 @@
     --greenhover:rgb(32, 134, 129);
     --orange:rgb(177, 86, 50);
     --orangehover:rgb(218, 135, 102);
-
-
-
 }
+
 html{
-    font-family:Raleway,sans-serif
+    font-family:Raleway,sans-serif;
 }
-navbar{
-    background:rgba(0,0,0,0)
+
+navbar {
+    background:rgba(0,0,0,0);
 }
 .navbarBig{
     z-index:5;
@@ -499,7 +499,6 @@ a:visited{
 body,html{
     background-color:var(--mainbackground);
     color:var(--maintext);
-    text-align:justify;
     transition:.3s;
     margin:0
 }
